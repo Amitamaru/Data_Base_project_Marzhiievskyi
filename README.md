@@ -2,4 +2,5 @@
 Result
 
 Redis :	27 ms 
+
 MySQL :	29 ms
