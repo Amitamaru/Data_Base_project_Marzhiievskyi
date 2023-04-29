@@ -3,4 +3,4 @@ Result
 
 Redis :	27 ms 
 
-MySQL :	29 ms
+MySQL :	31 ms
