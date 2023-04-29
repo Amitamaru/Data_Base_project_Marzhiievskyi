@@ -19,7 +19,7 @@ public class Country {
     private String code;
 
     @Column(name = "code_2")
-    private String code2;
+    private String alternativeCode;
 
     private String name;
 
@@ -55,7 +55,7 @@ public class Country {
     @Column(name = "head_of_state")
     private String headOfState;
 
-    @OneToOne
+    @OneToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "capital")
     private City city;
 

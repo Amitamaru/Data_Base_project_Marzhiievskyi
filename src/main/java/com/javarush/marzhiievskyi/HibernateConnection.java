@@ -1,5 +1,8 @@
 package com.javarush.marzhiievskyi;
 
+import com.javarush.marzhiievskyi.domain.City;
+import com.javarush.marzhiievskyi.domain.Country;
+import com.javarush.marzhiievskyi.domain.CountryLanguage;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
@@ -12,7 +15,9 @@ public class HibernateConnection {
 
     public HibernateConnection() {
         sessionFactory = new Configuration()
-
+                .addAnnotatedClass(City.class)
+                .addAnnotatedClass(Country.class)
+                .addAnnotatedClass(CountryLanguage.class)
                 .buildSessionFactory();
     }
 
